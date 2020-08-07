@@ -1,0 +1,40 @@
+  
+HELP.md
+.gradle
+build/
+bin/
+!gradle/wrapper/gradle-wrapper.jar
+!**/src/main/**
+!**/src/test/**
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+out/
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+### VS Code ###
+.vscode/
+.gradle/5.2.1/executionHistory/executionHistory.bin
+.gradle/5.2.1/executionHistory/executionHistory.lock
+.gradle/5.2.1/fileHashes/fileHashes.bin
+*.bin
+*.lock
+.gradle/5.2.1/fileHashes/fileHashes.lock

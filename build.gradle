@@ -1,0 +1,31 @@
+plugins {
+    id 'java'
+}
+
+group 'jabonfuhrer'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    /*Implementación de RabitMQ*/
+    implementation 'com.rabbitmq:amqp-client:5.7.2'
+    /*Implementacion de ActiveMQ*/
+    compile group: 'org.apache.activemq', name: 'activemq-all', version: '5.15.1'
+    implementation 'org.slf4j:slf4j-simple:2.0.0-alpha0'
+    compile 'com.sparkjava:spark-core:2.6.0'
+    implementation 'com.google.code.gson:gson:2.8.5'
+
+    // https://mvnrepository.com/artifact/org.thymeleaf/thymeleaf
+    compile group: 'org.thymeleaf', name: 'thymeleaf', version: '2.0.5'
+
+
+    compile group: 'org.freemarker', name: 'freemarker', version: '2.3.20'
+    compile 'com.sparkjava:spark-template-freemarker:2.5.5'
+    compile 'org.freemarker:freemarker:2.3.26-incubating'
+}
